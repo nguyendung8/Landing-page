@@ -24,10 +24,11 @@ function addAnimation() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 115) {
-    document.querySelector(".header").style.background = "#0C1011"; 
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop >120) {
+    document.querySelector(".header").style.position = "fixed";
+    document.querySelector(".header").style.background = "#0B1F17"; 
   } else {
-    document.querySelector(".header").style.background = "url('./assets/images/banner-bg.png')";
+    document.querySelector(".header").style.background = "inherit";
   }
 }
 
@@ -101,38 +102,3 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-// Footer icon hover
-let phoneISvg = document.querySelector('.phone-svg');
-let phoneSvgActive = document.querySelector('.phone-svg-active');
-let emailSvg = document.querySelector('.email-svg');
-let emailSvgActive = document.querySelector('.email-svg-active');
-let linkSvg = document.querySelector('.link-svg');
-let linkSvgActive = document.querySelector('.link-svg-active');
-let phoneInfo = document.querySelector('.phone-info');
-let emailInfo = document.querySelector('.email-info');
-let linkInfo = document.querySelector('.link-info');
-
-phoneInfo.addEventListener('mouseover', function() {
-    phoneISvg.classList.add('hidden');
-    phoneSvgActive.classList.remove('hidden');
-});
-phoneInfo.addEventListener('mouseout', function() {
-    phoneISvg.classList.remove('hidden');
-    phoneSvgActive.classList.add('hidden');
-});
-emailInfo.addEventListener('mouseover', function() {
-    emailSvg.classList.add('hidden');
-    emailSvgActive.classList.remove('hidden');
-});
-emailInfo.addEventListener('mouseout', function() {
-    emailSvg.classList.remove('hidden');
-    emailSvgActive.classList.add('hidden');
-});
-linkInfo.addEventListener('mouseover', function() {
-    linkSvg.classList.add('hidden');
-    linkSvgActive.classList.remove('hidden');
-});
-linkInfo.addEventListener('mouseout', function() {
-    linkSvg.classList.remove('hidden');
-    linkSvgActive.classList.add('hidden');
-});
