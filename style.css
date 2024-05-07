@@ -135,6 +135,9 @@ body {
     font-size: var(--title-font-size);
     line-height: 59px
 }
+.toggle-btn:hover {
+    border: 2px solid var(--primary);
+}
 .text-ellipsis {
     background: linear-gradient(244deg, #3FD984 -0.34%, #02A55D 14.64%, #58EF5E 28.69%, #01A25B 44.18%, #2DFFA2 56.73%);
     background-clip: text;
@@ -145,6 +148,9 @@ body {
     background-color: var(--primary);
     border-radius: 30px;
     padding: 12px 34px;
+}
+.register-experience-btn:hover {
+    background-color: #0F6935;
 }
 .view-demo-btn {
     background: rgba(4, 177, 78, 0.18);
@@ -398,12 +404,13 @@ body {
     background: linear-gradient(270deg, rgba(20, 160, 80, 0.30) 2.55%, rgba(2, 2, 2, 0.00) 99.81%);
 }
 .process-item-content:hover {
-    border: 1px solid rgba(4, 177, 78, 0.80);
+    outline: 1px solid rgba(4, 177, 78, 0.80);
 }
 .process-item-content{
     width: 998px;
     border-radius: 16px;
     background: linear-gradient(90deg, rgba(10, 156, 73, 0.30) 0%, rgba(14, 114, 57, 0.00) 100%);
+    box-sizing: border-box;
 }
 .process-item-img {
     width: 168px;
@@ -418,7 +425,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 .section-price {
-    background: url('./assets/images/banner-bg.png');
+    background: var(--second-background)
 }
 .section-price-title {
     font-size: 52px;
@@ -429,6 +436,10 @@ body {
     flex: 1;
     border-radius: 16px;
     background: #171E20;
+    box-sizing: border-box;
+}
+.price-item:hover {
+    outline: 1px solid  #0C8E44;
 }
 .package-tag  {
     padding: 3px 15px;
@@ -498,9 +509,15 @@ body {
     border-radius: 30px;
     background: #008137;
 }
-.highlight-item:first-child {
-    border-radius: 16px;
+.view-all:hover {
+    background-color: #0F6935;
+}
+.highlight-item:hover {
+    cursor: pointer;
     background: #047736;
+}
+.highlight-item:hover .highlight-read-more {
+    background-color: #23BB64;
 }
 .highlight-item {
     border-radius: 16px;
@@ -530,18 +547,21 @@ body {
     border-radius: 10px;
 }
 .section-register {
-    background: #0D1911;
+    background: url('./assets/images/register-bg.png') no-repeat center;
+    background-size: cover;
 }
 .register-form {
-    width: 634px;
     padding: 48px 80px;
     border-radius: 32px;
-    background: #022A1B;
+    background: rgba(8, 66, 35, 0.64);
 }
 .register-form-title {
     font-size: 48px;
     line-height: normal;
     letter-spacing: -1.44px;
+}
+.register-form-title span {
+    color: #1BD86C;;
 }
 .register-input {
     display: flex;
@@ -556,6 +576,9 @@ body {
     padding: 16px 34px;
     border-radius: 30px;
     background: var(--primary);
+}
+.submit-register-btn:hover {
+    background-color: #0F6935;
 }
 .section-faq {
     background-color: var(--background-color);
