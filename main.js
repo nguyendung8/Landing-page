@@ -24,9 +24,10 @@ function addAnimation() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop >120) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop >80) {
     document.querySelector(".header").style.position = "fixed";
     document.querySelector(".header").style.background = "#0B1F17"; 
+    document.querySelector(".section-banner").style.marginTop = "79px";
   } else {
     document.querySelector(".header").style.background = "inherit";
   }
@@ -102,3 +103,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+//Animation text
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.classList.remove('show');
+        }
+    });
+});
+
+let hiddenElements = document.querySelectorAll('.system-title-hidden');
+hiddenElements.forEach((el) => observer.observe(el));
