@@ -177,6 +177,9 @@ body {
 .section-container {
     padding: 28px 150px;
 }
+.banner-content {
+    padding-top: 50px;
+}
 .banner-content-title {
     font-size: var(--title-font-size);
     line-height: 59px
@@ -264,7 +267,6 @@ body {
     background-color: var(--second-background);
 }
 .target-title-strong {
-    color: #20E53D;
     font-size: 46px;
     font-weight: 600;
 }
@@ -295,6 +297,9 @@ body {
     font-weight: 600;
     line-height: normal;
     transform-origin: 50% 100%;
+}
+.section-solution {
+    padding-top: 0 !important;
 }
 .system-first-title span,
 .section-second-title span {
@@ -691,9 +696,6 @@ body {
 .section-faq {
     background-color: var(--background-color);
 }
-.faq-item {
-    border-bottom: 1px solid var(--primary);
-}
 .faq-item-title-active {
     color: var(--primary);
     font-size: 32px;
@@ -888,6 +890,11 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.faq-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #000000 -12%, #04B14D 64%, #000000 105%);
+}
 @media only screen and (max-width: 1156px) {
     .header {
         padding: 28px 26px;
@@ -971,6 +978,9 @@ body {
     .solution-item-img {
         height: 360px;
     }
+    .list-faq {
+        margin-bottom: 0 !important;
+    }
     .performance-item-img {
         width: 30px;
         height: 30px;
@@ -987,6 +997,12 @@ body {
     .benefit-item-img {
         height: 410px;
     }
+    .section-price {
+        padding-bottom: 0 !important;
+    }
+    .section-highlight-header {
+        margin-top: 0 !important;
+    }
     .solution-title-top,
     .solution-title-main,
     .section-price-title,
@@ -998,6 +1014,18 @@ body {
         font-size: 27px !important;
         text-align: center;
         font-weight: 700 !important;
+    }
+    .benefit-title {
+        gap: 0 !important;
+    }
+    .process-title {
+        gap: 8px !important;
+    }
+    .process-step svg {
+        flex: 1;
+    }
+    .process-step span {
+        flex: 18.5;
     }
     .solution-svg {
         width: 280px;
@@ -1044,7 +1072,6 @@ body {
     .process-item-content {
         width: unset;
         flex-direction: column !important;
-        align-items: center;
     }
     .price-item {
         width: 100%;
@@ -1059,7 +1086,7 @@ body {
         display: none !important;
     }
     .register-form {
-        padding: 24px 16px;
+        padding: 24px 34px;
     }
     .highlight-view-all {
         display: none !important;
@@ -1134,7 +1161,7 @@ body {
     .save-svg {
         width: 120px;
         top: 90%;
-        right: -1;
+        right: -1% !important;
     }
     .section-feature {
         padding: 0;
@@ -1196,8 +1223,53 @@ body {
     .list-info {
         flex-direction: column;
     }
+    #footer {
+        display: none;
+    }
+    #footer-mobile {
+        display: block !important;
+    }
     .footer-info {
         flex-direction: column-reverse;
-        align-items: center;
+    }
+    .register-experience-btn {
+        width: 100% !important;
+    }
+    .info-item-text {
+        font-weight: 600 !important;
+    }
+    .product-info {
+        width: 100% !important;
+        justify-content: center;
+    }
+    .footer-sub-menu {
+        color: var(--white);
+        max-height: 0;
+        overflow: hidden;
+        animation: slideDown 0.7s;
+    }
+    .show {
+        display: flex !important;
+        max-height: fit-content;
+    }
+    .footer-sub-menu li {
+        font-size: 14.2px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21.75px;
+    }
+    .section-header-top {
+        background-position: bottom;
+    }
+    .banner-content-btn {
+        flex-direction: column;
+    }
+    .view-demo-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-title {
+        font-size: 42px !important;
     }
 }

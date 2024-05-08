@@ -103,16 +103,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-//Animation text
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.classList.remove('show');
-        }
-    });
-});
 
-let hiddenElements = document.querySelectorAll('.system-title-hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+//Footer sub menu
+function toggleFirstSubMenu() {
+    var subMenu = document.getElementById('footerFirstSubMenu');
+    subMenu.classList.toggle('show');
+}
+function toggleSecondSubMenu() {
+    var subMenu = document.getElementById('footerSecondSubMenu');
+    subMenu.classList.toggle('show');
+}
+function toggleEndSubMenu() {
+    var subMenu = document.getElementById('footerEndSubMenu');
+    subMenu.classList.toggle('show');
+}
