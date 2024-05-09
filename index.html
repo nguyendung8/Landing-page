@@ -43,6 +43,58 @@
                     </li>
                 </ul>
                 <div class="header-btn flex items-center gap-3">
+                    <div class="header-lang flex gap-1 items-center cursor-pointer mr-3 relative">
+                        <span class="font-semibold">VI</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <ul class="lang-sub-menu absolute text-black z-50 hidden">
+                            <li class="lang-submenu-item flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_2144_17496)">
+                                      <path d="M0 0H24V24H0V0Z" fill="white"/>
+                                      <path d="M10.5601 0H13.4401V24H10.5601V0Z" fill="#CE1124"/>
+                                      <path d="M0 10.08H24V13.92H0V10.08Z" fill="#CE1124"/>
+                                      <mask id="mask0_2144_17496" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="24">
+                                        <path d="M0.00146484 0H31.9983V24H0.00146484V0Z" fill="white"/>
+                                      </mask>
+                                      <g mask="url(#mask0_2144_17496)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V24H0V0Z" fill="#DA251D"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.597 17.8594L12.397 14.7328L8.2251 17.8875L9.77197 12.75L5.6001 9.57657L10.761 9.52969L12.3642 4.40157L13.9907 9.51563L19.1517 9.52032L15.0032 12.7266L16.5923 17.8641L16.597 17.8594Z" fill="#FFFF00"/>
+                                      </g>
+                                    </g>
+                                    <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white"/>
+                                    <defs>
+                                      <clipPath id="clip0_2144_17496">
+                                        <rect width="24" height="24" rx="12" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                <a href="">
+                                    Tiếng Việt
+                                </a>
+                            </li>
+                            <li class="lang-submenu-item flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_2144_17457)">
+                                      <path d="M0 0H24V24H0V0Z" fill="#012169"/>
+                                      <path d="M2.8125 0L11.9625 9.05L21.075 0H24V3.1L15 12.05L24 20.95V24H21L12 15.05L3.0375 24H0V21L8.9625 12.1L0 3.2V0H2.8125Z" fill="white"/>
+                                      <path d="M15.9 14.05L24 22V24L13.8375 14.05H15.9ZM9 15.05L9.225 16.8L2.025 24H0L9 15.05ZM24 0V0.15L14.6625 9.55L14.7375 7.35L22.125 0H24ZM0 0L8.9625 8.8H6.7125L0 2.1V0Z" fill="#C8102E"/>
+                                      <path d="M9.0375 0V24H15.0375V0H9.0375ZM0 8V16H24V8H0Z" fill="white"/>
+                                      <path d="M0 9.65V14.45H24V9.65H0ZM10.2375 0V24H13.8375V0H10.2375Z" fill="#C8102E"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_2144_17457">
+                                        <rect width="24" height="24" rx="12" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                </svg>
+                                <a href="">
+                                    Tiếng Anh
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <button class="login-btn px-6 py-3 mr-1">
                         <a class="font-semibold" href="https://app.shiring.ai/login" target="_blank">Đăng nhập</a>
                     </button>
@@ -50,19 +102,73 @@
                         <a class="font-semibold" href="#register">Đăng kí</a>
                     </button>
                 </div>
-                <div class="menu-toggle md:hidden cursor-pointer">
-                    <svg class="menu-btn" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 13" fill="none">
-                        <path d="M0 1.5C0 0.947715 0.447715 0.5 1 0.5H15C15.5523 0.5 16 0.947715 16 1.5C16 2.05228 15.5523 2.5 15 2.5H1C0.447715 2.5 0 2.05228 0 1.5ZM0 6.5C0 5.94772 0.447715 5.5 1 5.5H15C15.5523 5.5 16 5.94772 16 6.5C16 7.05228 15.5523 7.5 15 7.5H1C0.447715 7.5 0 7.05228 0 6.5ZM0 11.5C0 10.9477 0.447715 10.5 1 10.5H15C15.5523 10.5 16 10.9477 16 11.5C16 12.0523 15.5523 12.5 15 12.5H1C0.447715 12.5 0 12.0523 0 11.5Z" fill="#04B14E"/>
-                    </svg>
-                    <svg class="cancel-btn hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                        <path d="M5.29289 5.79289C5.68342 5.40237 6.31658 5.40237 6.70711 5.79289L12 11.0858L17.2929 5.79289C17.6834 5.40237 18.3166 5.40237 18.7071 5.79289C19.0976 6.18342 19.0976 6.81658 18.7071 7.20711L13.4142 12.5L18.7071 17.7929C19.0976 18.1834 19.0976 18.8166 18.7071 19.2071C18.3166 19.5976 17.6834 19.5976 17.2929 19.2071L12 13.9142L6.70711 19.2071C6.31658 19.5976 5.68342 19.5976 5.29289 19.2071C4.90237 18.8166 4.90237 18.1834 5.29289 17.7929L10.5858 12.5L5.29289 7.20711C4.90237 6.81658 4.90237 6.18342 5.29289 5.79289Z" fill="url(#paint0_linear_1267_16974)"/>
-                            <defs>
-                            <linearGradient id="paint0_linear_1267_16974" x1="7.20759" y1="16.1308" x2="17.3504" y2="6.52564" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#028E3E"/>
-                                <stop offset="1" stop-color="#23F07B"/>
-                            </linearGradient>
-                            </defs>
-                    </svg>
+                <div class="flex items-center gap-4 md:hidden">
+                    <div class="header-lang md:hidden flex items-center cursor-pointer mr-3 relative">
+                        <span class="font-semibold">VI</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <ul class="lang-sub-menu absolute text-black z-50 hidden">
+                            <li class="lang-submenu-item flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_2144_17496)">
+                                      <path d="M0 0H24V24H0V0Z" fill="white"/>
+                                      <path d="M10.5601 0H13.4401V24H10.5601V0Z" fill="#CE1124"/>
+                                      <path d="M0 10.08H24V13.92H0V10.08Z" fill="#CE1124"/>
+                                      <mask id="mask0_2144_17496" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="24">
+                                        <path d="M0.00146484 0H31.9983V24H0.00146484V0Z" fill="white"/>
+                                      </mask>
+                                      <g mask="url(#mask0_2144_17496)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V24H0V0Z" fill="#DA251D"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.597 17.8594L12.397 14.7328L8.2251 17.8875L9.77197 12.75L5.6001 9.57657L10.761 9.52969L12.3642 4.40157L13.9907 9.51563L19.1517 9.52032L15.0032 12.7266L16.5923 17.8641L16.597 17.8594Z" fill="#FFFF00"/>
+                                      </g>
+                                    </g>
+                                    <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white"/>
+                                    <defs>
+                                      <clipPath id="clip0_2144_17496">
+                                        <rect width="24" height="24" rx="12" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                <a href="">
+                                    Tiếng Việt
+                                </a>
+                            </li>
+                            <li class="lang-submenu-item flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_2144_17457)">
+                                      <path d="M0 0H24V24H0V0Z" fill="#012169"/>
+                                      <path d="M2.8125 0L11.9625 9.05L21.075 0H24V3.1L15 12.05L24 20.95V24H21L12 15.05L3.0375 24H0V21L8.9625 12.1L0 3.2V0H2.8125Z" fill="white"/>
+                                      <path d="M15.9 14.05L24 22V24L13.8375 14.05H15.9ZM9 15.05L9.225 16.8L2.025 24H0L9 15.05ZM24 0V0.15L14.6625 9.55L14.7375 7.35L22.125 0H24ZM0 0L8.9625 8.8H6.7125L0 2.1V0Z" fill="#C8102E"/>
+                                      <path d="M9.0375 0V24H15.0375V0H9.0375ZM0 8V16H24V8H0Z" fill="white"/>
+                                      <path d="M0 9.65V14.45H24V9.65H0ZM10.2375 0V24H13.8375V0H10.2375Z" fill="#C8102E"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_2144_17457">
+                                        <rect width="24" height="24" rx="12" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                </svg>
+                                <a href="">
+                                    Tiếng Anh
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-toggle md:hidden cursor-pointer">
+                        <svg class="menu-btn" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 13" fill="none">
+                            <path d="M0 1.5C0 0.947715 0.447715 0.5 1 0.5H15C15.5523 0.5 16 0.947715 16 1.5C16 2.05228 15.5523 2.5 15 2.5H1C0.447715 2.5 0 2.05228 0 1.5ZM0 6.5C0 5.94772 0.447715 5.5 1 5.5H15C15.5523 5.5 16 5.94772 16 6.5C16 7.05228 15.5523 7.5 15 7.5H1C0.447715 7.5 0 7.05228 0 6.5ZM0 11.5C0 10.9477 0.447715 10.5 1 10.5H15C15.5523 10.5 16 10.9477 16 11.5C16 12.0523 15.5523 12.5 15 12.5H1C0.447715 12.5 0 12.0523 0 11.5Z" fill="#04B14E"/>
+                        </svg>
+                        <svg class="cancel-btn hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M5.29289 5.79289C5.68342 5.40237 6.31658 5.40237 6.70711 5.79289L12 11.0858L17.2929 5.79289C17.6834 5.40237 18.3166 5.40237 18.7071 5.79289C19.0976 6.18342 19.0976 6.81658 18.7071 7.20711L13.4142 12.5L18.7071 17.7929C19.0976 18.1834 19.0976 18.8166 18.7071 19.2071C18.3166 19.5976 17.6834 19.5976 17.2929 19.2071L12 13.9142L6.70711 19.2071C6.31658 19.5976 5.68342 19.5976 5.29289 19.2071C4.90237 18.8166 4.90237 18.1834 5.29289 17.7929L10.5858 12.5L5.29289 7.20711C4.90237 6.81658 4.90237 6.18342 5.29289 5.79289Z" fill="url(#paint0_linear_1267_16974)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_1267_16974" x1="7.20759" y1="16.1308" x2="17.3504" y2="6.52564" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#028E3E"/>
+                                    <stop offset="1" stop-color="#23F07B"/>
+                                </linearGradient>
+                                </defs>
+                        </svg>
+                    </div>
                 </div>
             </nav>
             <div class="dropdown-menu flex flex-col gap-56">
@@ -557,56 +663,70 @@
                 <img src="./assets/images/target-ellipse-left.png" class="absolute left-0 top-0">
                 <img src="./assets/images/target-ellipse-right.png" class="absolute right-0 top-0">
                 <div class="list-target flex flex-col justify-center items-center gap-10">
-                    <div id="target-card1" class="target-item w-full">
-                        <div class="target-item target-item-first flex items-center justify-center">
-                            <h1 class="target-item-title font-semibold text-center">
-                                <span>
-                                    Mang tới bạn
-                                </span>
-                                <span class="target-title-strong relative">
-                                    công cụ tuyển dụng 
-                                    <svg class="absolute target-item-svg" xmlns="http://www.w3.org/2000/svg" width="332" height="8" viewBox="0 0 332 8" fill="none">
-                                        <path d="M331.99 3.45421C330.301 3.36468 328.752 3.34111 327.063 3.31539C325.373 3.28968 323.825 3.20229 322.135 3.11277C318.476 2.92942 314.957 2.6844 311.298 2.50106C304.4 2.1408 297.362 1.7784 290.463 1.60959C284.128 1.38553 277.651 1.22315 271.314 1.12673C269.624 1.10102 267.935 1.07531 266.386 1.05174C260.048 1.01913 253.711 0.922709 247.374 0.890104C232.586 0.85657 217.657 0.820893 202.868 0.914993C188.36 1.01338 173.853 1.11176 159.485 1.27611C152.442 1.36042 145.258 1.4426 138.215 1.52691C130.467 1.72815 122.72 1.80175 115.113 1.94131C99.1943 2.27353 83.4171 2.54408 67.4984 2.87631C53.6927 3.17686 40.0256 3.671 26.3564 4.35659C17.6186 4.86191 8.7393 5.42891 0.000817704 5.99804C9.99522 6.46926 20.1326 6.75117 30.2707 6.96926C36.889 7.06997 43.5081 7.10686 49.9864 7.14161C54.2116 7.14207 58.4375 7.07872 62.8043 7.01751C65.4805 6.9944 68.0166 6.90534 70.5528 6.81627C77.4564 6.60218 84.5 6.45405 91.4036 6.23996C99.4337 6.04301 107.324 5.7801 115.354 5.58315C123.525 5.38834 131.837 5.19568 140.007 5.00087C147.333 4.85703 154.799 4.71532 162.265 4.57362C169.45 4.42763 176.774 4.3476 183.958 4.26543C191.283 4.1854 198.466 4.10323 205.791 4.0232C213.256 3.94531 220.58 3.99291 228.044 3.97884C241.566 3.92927 255.085 4.07116 268.745 4.21518C276.349 4.33089 283.813 4.31682 291.419 4.30489C298.884 4.29082 306.348 4.27675 313.673 4.19672C316.631 4.1779 319.729 4.16123 322.688 4.07859C324.097 4.0362 325.647 3.99595 327.056 3.88975C328.325 3.7814 329.594 3.60923 330.862 3.5647C331.286 3.50731 331.568 3.44778 331.99 3.45421Z" fill="#20E53D"/>
-                                    </svg>
-                                </span>
-                                <span>
-                                    của tương lai
-                                </span>
-                            </h1>
+                    <div class="cards">
+                        <div class="card" data-index="0">
+                          <div class="card__inner">
+                            <div class="target-item w-full">
+                                <div class="target-item target-item-first flex items-center justify-center">
+                                    <h1 class="target-item-title font-semibold text-center">
+                                        <span>
+                                            Mang tới bạn
+                                        </span>
+                                        <span class="target-title-strong relative">
+                                            công cụ tuyển dụng 
+                                            <svg class="absolute target-item-svg" xmlns="http://www.w3.org/2000/svg" width="332" height="8" viewBox="0 0 332 8" fill="none">
+                                                <path d="M331.99 3.45421C330.301 3.36468 328.752 3.34111 327.063 3.31539C325.373 3.28968 323.825 3.20229 322.135 3.11277C318.476 2.92942 314.957 2.6844 311.298 2.50106C304.4 2.1408 297.362 1.7784 290.463 1.60959C284.128 1.38553 277.651 1.22315 271.314 1.12673C269.624 1.10102 267.935 1.07531 266.386 1.05174C260.048 1.01913 253.711 0.922709 247.374 0.890104C232.586 0.85657 217.657 0.820893 202.868 0.914993C188.36 1.01338 173.853 1.11176 159.485 1.27611C152.442 1.36042 145.258 1.4426 138.215 1.52691C130.467 1.72815 122.72 1.80175 115.113 1.94131C99.1943 2.27353 83.4171 2.54408 67.4984 2.87631C53.6927 3.17686 40.0256 3.671 26.3564 4.35659C17.6186 4.86191 8.7393 5.42891 0.000817704 5.99804C9.99522 6.46926 20.1326 6.75117 30.2707 6.96926C36.889 7.06997 43.5081 7.10686 49.9864 7.14161C54.2116 7.14207 58.4375 7.07872 62.8043 7.01751C65.4805 6.9944 68.0166 6.90534 70.5528 6.81627C77.4564 6.60218 84.5 6.45405 91.4036 6.23996C99.4337 6.04301 107.324 5.7801 115.354 5.58315C123.525 5.38834 131.837 5.19568 140.007 5.00087C147.333 4.85703 154.799 4.71532 162.265 4.57362C169.45 4.42763 176.774 4.3476 183.958 4.26543C191.283 4.1854 198.466 4.10323 205.791 4.0232C213.256 3.94531 220.58 3.99291 228.044 3.97884C241.566 3.92927 255.085 4.07116 268.745 4.21518C276.349 4.33089 283.813 4.31682 291.419 4.30489C298.884 4.29082 306.348 4.27675 313.673 4.19672C316.631 4.1779 319.729 4.16123 322.688 4.07859C324.097 4.0362 325.647 3.99595 327.056 3.88975C328.325 3.7814 329.594 3.60923 330.862 3.5647C331.286 3.50731 331.568 3.44778 331.99 3.45421Z" fill="#20E53D"/>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            của tương lai
+                                        </span>
+                                    </h1>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card" data-index="0">
+                          <div class="card__inner">
+                            <div class="target-item w-full">
+                                <div class=" target-item target-item-second flex items-center justify-center">
+                                    <h1 class="target-item-title font-medium text-center">
+                                        <span class="target-title-strong relative">
+                                            Tiết kiệm 71% 
+                                            <svg class="absolute save-svg right-2" xmlns="http://www.w3.org/2000/svg" width="300" height="7" viewBox="0 0 332 7" fill="none">
+                                                <path d="M331.998 2.67466C330.309 2.58514 328.76 2.56157 327.07 2.53585C325.381 2.51014 323.832 2.42275 322.143 2.33322C318.483 2.14988 314.965 1.90486 311.305 1.72152C304.408 1.36126 297.37 0.998857 290.471 0.830047C284.136 0.605992 277.659 0.443611 271.322 0.347189C269.632 0.321476 267.942 0.295764 266.393 0.272195C260.056 0.239589 253.719 0.143168 247.382 0.110563C232.594 0.0770288 217.665 0.0413522 202.876 0.135452C188.368 0.233837 173.861 0.332222 159.493 0.496567C152.45 0.580882 145.266 0.663054 138.223 0.747369C130.475 0.948604 122.728 1.02221 115.121 1.16177C99.2021 1.49399 83.4249 1.76454 67.5062 2.09677C53.7005 2.39732 40.0334 2.89146 26.3642 3.57705C17.6264 4.08237 8.74712 4.64937 0.0086302 5.2185C10.003 5.68972 20.1404 5.97163 30.2785 6.18972C36.8969 6.29043 43.5159 6.32732 49.9942 6.36206C54.2194 6.36253 58.4454 6.29918 62.8121 6.23797C65.4883 6.21486 68.0244 6.1258 70.5606 6.03673C77.4642 5.82264 84.5079 5.67451 91.4114 5.46042C99.4415 5.26347 107.332 5.00056 115.362 4.80361C123.533 4.6088 131.844 4.41614 140.015 4.22133C147.341 4.07748 154.807 3.93578 162.273 3.79408C169.457 3.64809 176.782 3.56806 183.966 3.48589C191.29 3.40586 198.474 3.32368 205.799 3.24365C213.264 3.16577 220.587 3.21337 228.052 3.1993C241.573 3.14973 255.092 3.29162 268.752 3.43564C276.356 3.55135 283.821 3.53728 291.427 3.52535C298.891 3.51128 306.356 3.49721 313.681 3.41718C316.639 3.39836 319.737 3.38168 322.696 3.29905C324.105 3.25666 325.654 3.21641 327.064 3.1102C328.333 3.00185 329.602 2.82969 330.87 2.78516C331.293 2.72777 331.576 2.66824 331.998 2.67466Z" fill="#20E53D"/>
+                                            </svg>
+                                        </span>
+                                        <span class="text-black">
+                                            thời gian nhờ việc tự động hóa các công việc tuyển dụng
+                                        </span>
+                                        
+                                    </h1>
+                                </div>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="card" data-index="0">
+                          <div class="card__inner">
+                            <div class="target-item w-full">
+                                <div class=" target-item target-item-end flex items-center justify-center">
+                                    <h1 class="target-item-title font-medium text-center">
+                                        <span class="target-title-strong text-white relative">
+                                            Tiết kiệm 71% 
+                                            <svg class="absolute save-svg right-2" xmlns="http://www.w3.org/2000/svg" width="300" height="7" viewBox="0 0 332 7" fill="none">
+                                                <path d="M331.998 2.67466C330.309 2.58514 328.76 2.56157 327.07 2.53585C325.381 2.51014 323.832 2.42275 322.143 2.33322C318.483 2.14988 314.965 1.90486 311.305 1.72152C304.408 1.36126 297.37 0.998857 290.471 0.830047C284.136 0.605992 277.659 0.443611 271.322 0.347189C269.632 0.321476 267.942 0.295764 266.393 0.272195C260.056 0.239589 253.719 0.143168 247.382 0.110563C232.594 0.0770288 217.665 0.0413522 202.876 0.135452C188.368 0.233837 173.861 0.332222 159.493 0.496567C152.45 0.580882 145.266 0.663054 138.223 0.747369C130.475 0.948604 122.728 1.02221 115.121 1.16177C99.2021 1.49399 83.4249 1.76454 67.5062 2.09677C53.7005 2.39732 40.0334 2.89146 26.3642 3.57705C17.6264 4.08237 8.74712 4.64937 0.0086302 5.2185C10.003 5.68972 20.1404 5.97163 30.2785 6.18972C36.8969 6.29043 43.5159 6.32732 49.9942 6.36206C54.2194 6.36253 58.4454 6.29918 62.8121 6.23797C65.4883 6.21486 68.0244 6.1258 70.5606 6.03673C77.4642 5.82264 84.5079 5.67451 91.4114 5.46042C99.4415 5.26347 107.332 5.00056 115.362 4.80361C123.533 4.6088 131.844 4.41614 140.015 4.22133C147.341 4.07748 154.807 3.93578 162.273 3.79408C169.457 3.64809 176.782 3.56806 183.966 3.48589C191.29 3.40586 198.474 3.32368 205.799 3.24365C213.264 3.16577 220.587 3.21337 228.052 3.1993C241.573 3.14973 255.092 3.29162 268.752 3.43564C276.356 3.55135 283.821 3.53728 291.427 3.52535C298.891 3.51128 306.356 3.49721 313.681 3.41718C316.639 3.39836 319.737 3.38168 322.696 3.29905C324.105 3.25666 325.654 3.21641 327.064 3.1102C328.333 3.00185 329.602 2.82969 330.87 2.78516C331.293 2.72777 331.576 2.66824 331.998 2.67466Z" fill="#20E53D"/>
+                                            </svg>
+                                        </span>
+                                        <span class="text-black">
+                                            thời gian nhờ việc tự động hóa các công việc tuyển dụng
+                                        </span>
+                                        
+                                    </h1>
+                                </div>
+                            </div>   
+                          </div>
                         </div>
                     </div>
-                    <div id="target-card2" class="target-item w-full">
-                        <div class=" target-item target-item-second flex items-center justify-center">
-                            <h1 class="target-item-title font-medium text-center">
-                                <span class="target-title-strong relative">
-                                    Tiết kiệm 71% 
-                                    <svg class="absolute save-svg right-2" xmlns="http://www.w3.org/2000/svg" width="300" height="7" viewBox="0 0 332 7" fill="none">
-                                        <path d="M331.998 2.67466C330.309 2.58514 328.76 2.56157 327.07 2.53585C325.381 2.51014 323.832 2.42275 322.143 2.33322C318.483 2.14988 314.965 1.90486 311.305 1.72152C304.408 1.36126 297.37 0.998857 290.471 0.830047C284.136 0.605992 277.659 0.443611 271.322 0.347189C269.632 0.321476 267.942 0.295764 266.393 0.272195C260.056 0.239589 253.719 0.143168 247.382 0.110563C232.594 0.0770288 217.665 0.0413522 202.876 0.135452C188.368 0.233837 173.861 0.332222 159.493 0.496567C152.45 0.580882 145.266 0.663054 138.223 0.747369C130.475 0.948604 122.728 1.02221 115.121 1.16177C99.2021 1.49399 83.4249 1.76454 67.5062 2.09677C53.7005 2.39732 40.0334 2.89146 26.3642 3.57705C17.6264 4.08237 8.74712 4.64937 0.0086302 5.2185C10.003 5.68972 20.1404 5.97163 30.2785 6.18972C36.8969 6.29043 43.5159 6.32732 49.9942 6.36206C54.2194 6.36253 58.4454 6.29918 62.8121 6.23797C65.4883 6.21486 68.0244 6.1258 70.5606 6.03673C77.4642 5.82264 84.5079 5.67451 91.4114 5.46042C99.4415 5.26347 107.332 5.00056 115.362 4.80361C123.533 4.6088 131.844 4.41614 140.015 4.22133C147.341 4.07748 154.807 3.93578 162.273 3.79408C169.457 3.64809 176.782 3.56806 183.966 3.48589C191.29 3.40586 198.474 3.32368 205.799 3.24365C213.264 3.16577 220.587 3.21337 228.052 3.1993C241.573 3.14973 255.092 3.29162 268.752 3.43564C276.356 3.55135 283.821 3.53728 291.427 3.52535C298.891 3.51128 306.356 3.49721 313.681 3.41718C316.639 3.39836 319.737 3.38168 322.696 3.29905C324.105 3.25666 325.654 3.21641 327.064 3.1102C328.333 3.00185 329.602 2.82969 330.87 2.78516C331.293 2.72777 331.576 2.66824 331.998 2.67466Z" fill="#20E53D"/>
-                                    </svg>
-                                </span>
-                                <span class="text-black">
-                                    thời gian nhờ việc tự động hóa các công việc tuyển dụng
-                                </span>
-                                
-                            </h1>
-                        </div>
-                    </div>    
-                    <div id="target-card3" class="target-item w-full">
-                        <div class=" target-item target-item-end flex items-center justify-center">
-                            <h1 class="target-item-title font-medium text-center">
-                                <span class="target-title-strong text-white relative">
-                                    Tiết kiệm 71% 
-                                    <svg class="absolute save-svg right-2" xmlns="http://www.w3.org/2000/svg" width="300" height="7" viewBox="0 0 332 7" fill="none">
-                                        <path d="M331.998 2.67466C330.309 2.58514 328.76 2.56157 327.07 2.53585C325.381 2.51014 323.832 2.42275 322.143 2.33322C318.483 2.14988 314.965 1.90486 311.305 1.72152C304.408 1.36126 297.37 0.998857 290.471 0.830047C284.136 0.605992 277.659 0.443611 271.322 0.347189C269.632 0.321476 267.942 0.295764 266.393 0.272195C260.056 0.239589 253.719 0.143168 247.382 0.110563C232.594 0.0770288 217.665 0.0413522 202.876 0.135452C188.368 0.233837 173.861 0.332222 159.493 0.496567C152.45 0.580882 145.266 0.663054 138.223 0.747369C130.475 0.948604 122.728 1.02221 115.121 1.16177C99.2021 1.49399 83.4249 1.76454 67.5062 2.09677C53.7005 2.39732 40.0334 2.89146 26.3642 3.57705C17.6264 4.08237 8.74712 4.64937 0.0086302 5.2185C10.003 5.68972 20.1404 5.97163 30.2785 6.18972C36.8969 6.29043 43.5159 6.32732 49.9942 6.36206C54.2194 6.36253 58.4454 6.29918 62.8121 6.23797C65.4883 6.21486 68.0244 6.1258 70.5606 6.03673C77.4642 5.82264 84.5079 5.67451 91.4114 5.46042C99.4415 5.26347 107.332 5.00056 115.362 4.80361C123.533 4.6088 131.844 4.41614 140.015 4.22133C147.341 4.07748 154.807 3.93578 162.273 3.79408C169.457 3.64809 176.782 3.56806 183.966 3.48589C191.29 3.40586 198.474 3.32368 205.799 3.24365C213.264 3.16577 220.587 3.21337 228.052 3.1993C241.573 3.14973 255.092 3.29162 268.752 3.43564C276.356 3.55135 283.821 3.53728 291.427 3.52535C298.891 3.51128 306.356 3.49721 313.681 3.41718C316.639 3.39836 319.737 3.38168 322.696 3.29905C324.105 3.25666 325.654 3.21641 327.064 3.1102C328.333 3.00185 329.602 2.82969 330.87 2.78516C331.293 2.72777 331.576 2.66824 331.998 2.67466Z" fill="#20E53D"/>
-                                    </svg>
-                                </span>
-                                <span class="text-black">
-                                    thời gian nhờ việc tự động hóa các công việc tuyển dụng
-                                </span>
-                                
-                            </h1>
-                        </div>
-                    </div>   
                 </div>
             </div>
         </section>
@@ -668,165 +788,212 @@
                         </p>
                     </h1>
                 </div>
-                <div id="cards" class="mt-14 list-solution">
-                    <div id="card-1" class="solution-item flex gap-24 mt-9 items-center">
-                        <img src="./assets/images/solution-img.png" alt="" class="solution-item-img">
-                        <div class="solution-content text-white">
-                            <h2 class="solution-content-title font-bold">CV Parser</h2>
-                            <p class="solution-content-desc font-medium">Nếu bạn/ nhân sự của bạn vẫn ngồi hàng tiếng đồng hồ để nhập liệu hàng tá hồ sơ ứng tuyển lên google sheet hoặc excel thì CV Parser chính là vị cứu tinh của bạn, đây là công cụ được tích hợp trên Shiring để tự động hóa công việc nhập liệu với tốc độ nhanh và các đăc điểm nổi bận như 
-                                <br>- Tỉ lệ bóc tách có độ chính xác cao lên đến 98% 
-                                <br>- Bóc tách chi tiết hồ sơ ứng viên thông tin liên hệ, học vấn, kinh nghiệm làm việc, kỹ năng,... 
-                                <br>- Bóc tách đồng thời nhiều hồ sơ ứng viên
-                            </p>
-                            <a href="" class="read-more font-semibold flex items-center">
-                                <p>
-                                    Xem thêm
-                                </p> 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                    <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                <div class="mt-14 list-solution">
+                    <div class="cards">
+                        <div class="card" data-index="0">
+                          <div class="card__inner">
+                            <div id="card-1" class="solution-item flex gap-24 mt-9 items-center">
+                                <video class="solution-item-img" width="100%" loop="true" muted autoplay="true">
+                                    <source src="./assets/images/cv parser.webm" type="video/webm">
+                                </video>
+                                <div class="solution-content text-white">
+                                    <h2 class="solution-content-title font-bold">CV Parser</h2>
+                                    <p class="solution-content-desc font-medium">Nếu bạn/ nhân sự của bạn vẫn ngồi hàng tiếng đồng hồ để nhập liệu hàng tá hồ sơ ứng tuyển lên google sheet hoặc excel thì CV Parser chính là vị cứu tinh của bạn, đây là công cụ được tích hợp trên Shiring để tự động hóa công việc nhập liệu với tốc độ nhanh và các đăc điểm nổi bận như 
+                                        <br>- Tỉ lệ bóc tách có độ chính xác cao lên đến 98% 
+                                        <br>- Bóc tách chi tiết hồ sơ ứng viên thông tin liên hệ, học vấn, kinh nghiệm làm việc, kỹ năng,... 
+                                        <br>- Bóc tách đồng thời nhiều hồ sơ ứng viên
+                                    </p>
+                                    <a href="" class="read-more font-semibold flex items-center">
+                                        <p>
+                                            Xem thêm
+                                        </p> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                            <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div id="card-2" class="solution-item flex gap-24 mt-9 items-center">
-                        <img src="./assets/images/solution-img.png" alt="" class="solution-item-img">
-                        <!-- <video class="solution-item-img" width="100%" loop="true" muted autoplay="true">
-                            <source src="./assets/images/AI Screening.webm" type="video/webm">
-                        </video> -->
-                        <div class="solution-content text-white">
-                            <h2 class="solution-content-title font-bold">AI Screening</h2>
-                            <p class="solution-content-desc font-medium">Không phải ngồi đọc từ hồ sơ ứng viên để xem hồ sơ có phù hợp với yêu cầu công việc hay không nữa? AI của SHIRING sẽ giúp bạn đọc hàng ngàn CV sau đó chấm điểm và đưa ra các đánh giá một cách khách quan nhất
-                                <br>- Tính chính xác cao
-                                <br>- Trách thiên vị, bỏ qua ứng viên tiềm năng
-                                <br>- Tiết kiệm thời gian và công sức
-                            </p>
-                            <a href="" class="read-more font-semibold flex items-center">
-                                <p>
-                                    Xem thêm
-                                </p> 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                    <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                <div id="card-2" class="solution-item flex gap-24 mt-9 items-center">
+                                    <video class="solution-item-img" width="100%" loop="true" muted autoplay="true">
+                                        <source src="./assets/images/AI Screening 1.webm" type="video/webm">
+                                    </video>
+                                    <div class="solution-content text-white">
+                                        <h2 class="solution-content-title font-bold">AI Screening</h2>
+                                        <p class="solution-content-desc font-medium">Không phải ngồi đọc từ hồ sơ ứng viên để xem hồ sơ có phù hợp với yêu cầu công việc hay không nữa? AI của SHIRING sẽ giúp bạn đọc hàng ngàn CV sau đó chấm điểm và đưa ra các đánh giá một cách khách quan nhất
+                                            <br>- Tính chính xác cao
+                                            <br>- Trách thiên vị, bỏ qua ứng viên tiềm năng
+                                            <br>- Tiết kiệm thời gian và công sức
+                                        </p>
+                                        <a href="" class="read-more font-semibold flex items-center">
+                                            <p>
+                                                Xem thêm
+                                            </p> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                                <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="card-3" class="solution-item flex gap-24 mt-9 items-center">
-                        <img src="./assets/images/solution-img.png" alt="" class="solution-item-img">
-                        <div class="solution-content text-white">
-                            <h2 class="solution-content-title font-bold">Số hóa quy trình tuyển dụng</h2>
-                            <p class="solution-content-desc font-medium">Dễ dàng tổ chức tuyển dụng theo đợt tuyển, phân quyền quản lý và xem báo 01 cáo theo từng vị trí tuyển dụng. 
-                                <br>- Cho phép cài đặt quy trình tuyển dụng, vòng tuyển dụng theo từng vị trí tuyển dụng
-                                <br>- Cấu hình lý do loại, nguồn ứng viên, để thống kê báo cáo.
-                                <br>- Theo dõi lịch sử chăm sóc, lịch sử ứng tuyển của ứng viên.
-                                <br>- Dễ dàng ghi chú, gắn thẻ, đánh giá, chia sẻ hồ sơ ứng viên cho hội đồng tuyển dụng.
-                                <br>- Minh bạch hóa quy trình tuyển dụng.
-                            </p>
-                            <a href="" class="read-more font-semibold flex items-center">
-                                <p>
-                                    Xem thêm
-                                </p> 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                    <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                        <div class="card" data-index="0">
+                          <div class="card__inner">
+                            <div id="card-3" class="solution-item flex gap-24 mt-9 items-center">
+                                <video class="solution-item-img" width="100%" loop="true" muted autoplay="true">
+                                    <source src="./assets/images/sohoa.webm" type="video/webm">
+                                </video>
+                                <div class="solution-content text-white">
+                                    <h2 class="solution-content-title font-bold">Số hóa quy trình tuyển dụng</h2>
+                                    <p class="solution-content-desc font-medium">Dễ dàng tổ chức tuyển dụng theo đợt tuyển, phân quyền quản lý và xem báo 01 cáo theo từng vị trí tuyển dụng. 
+                                        <br>- Cho phép cài đặt quy trình tuyển dụng, vòng tuyển dụng theo từng vị trí tuyển dụng
+                                        <br>- Cấu hình lý do loại, nguồn ứng viên, để thống kê báo cáo.
+                                        <br>- Theo dõi lịch sử chăm sóc, lịch sử ứng tuyển của ứng viên.
+                                        <br>- Dễ dàng ghi chú, gắn thẻ, đánh giá, chia sẻ hồ sơ ứng viên cho hội đồng tuyển dụng.
+                                        <br>- Minh bạch hóa quy trình tuyển dụng.
+                                    </p>
+                                    <a href="" class="read-more font-semibold flex items-center">
+                                        <p>
+                                            Xem thêm
+                                        </p> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                            <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div id="card-4" class="solution-item flex gap-24 mt-9 items-center">
-                        <img src="./assets/images/solution-img.png" alt="" class="solution-item-img">
-                        <div class="solution-content text-white">
-                            <h2 class="solution-content-title font-bold">Employer Branding</h2>
-                            <p class="solution-content-desc font-medium">Cung cấp trang tuyển dụng để làm thương hiệu tuyển dụng, đăng các tin tuyển dụng để thu thập hồ sơ ứng viên
-                                <br>- Đăng tin tuyển dụng miễn phí
-                                <br>- Tùy biến style, màu sắc, hình ảnh video theo brand guildeline doanh nghiệp
-                                <br>- Tùy biến form ứng tuyển thu thập thêm các thông tin của ứng viên
-                            </p>
-                            <a href="" class="read-more font-semibold flex items-center">
-                                <p>
-                                    Xem thêm
-                                </p> 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                    <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                <div id="card-4" class="solution-item flex gap-24 mt-9 items-center">
+                                    <video class="solution-item-img" width="100%" loop="true" muted autoplay="true">
+                                        <source src="./assets/images/employer branding.webm" type="video/webm">
+                                    </video>
+                                    <div class="solution-content text-white">
+                                        <h2 class="solution-content-title font-bold">Employer Branding</h2>
+                                        <p class="solution-content-desc font-medium">Cung cấp trang tuyển dụng để làm thương hiệu tuyển dụng, đăng các tin tuyển dụng để thu thập hồ sơ ứng viên
+                                            <br>- Đăng tin tuyển dụng miễn phí
+                                            <br>- Tùy biến style, màu sắc, hình ảnh video theo brand guildeline doanh nghiệp
+                                            <br>- Tùy biến form ứng tuyển thu thập thêm các thông tin của ứng viên
+                                        </p>
+                                        <a href="" class="read-more font-semibold flex items-center">
+                                            <p>
+                                                Xem thêm
+                                            </p> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                                <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="card-5" class="solution-item flex gap-24 mt-9 items-center">
-                        <img src="./assets/images/solution-img.png" alt="" class="solution-item-img">
-                        <div class="solution-content text-white">
-                            <h2 class="solution-content-title font-bold">Automation</h2>
-                            <p class="solution-content-desc font-medium">Tối ưu hóa công việc với các tính năng tự động trên SHIRING
-                                <br>- Tự động gửi email theo mẫu cho ứng viên khi thay đổi vòng tuyển dụng hoặc loại ứng viên.
-                                <br>- Tự động nhắc nhở nhân sự tuyển dụng khi ứng viên ở quá lâu trong vòng tuyển dụng.
-                                <br>- Tự động đồng bộ hồ sơ từ 10+ website tuyển dụng phổ biến
-                            </p>
-                            <a href="" class="read-more font-semibold flex items-center">
-                                <p>
-                                    Xem thêm
-                                </p> 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                    <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                <div id="card-5" class="solution-item flex gap-24 mt-9 items-center">
+                                    <video class="solution-item-img" width="100%" loop="true" muted autoplay="true">
+                                        <source src="./assets/images/auto.webm" type="video/webm">
+                                    </video>
+                                    <div class="solution-content text-white">
+                                        <h2 class="solution-content-title font-bold">Automation</h2>
+                                        <p class="solution-content-desc font-medium">Tối ưu hóa công việc với các tính năng tự động trên SHIRING
+                                            <br>- Tự động gửi email theo mẫu cho ứng viên khi thay đổi vòng tuyển dụng hoặc loại ứng viên.
+                                            <br>- Tự động nhắc nhở nhân sự tuyển dụng khi ứng viên ở quá lâu trong vòng tuyển dụng.
+                                            <br>- Tự động đồng bộ hồ sơ từ 10+ website tuyển dụng phổ biến
+                                        </p>
+                                        <a href="" class="read-more font-semibold flex items-center">
+                                            <p>
+                                                Xem thêm
+                                            </p> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                                <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="card-6" class="solution-item flex gap-24 mt-9 items-center">
-                        <img src="./assets/images/solution-img.png" alt="" class="solution-item-img">
-                        <div class="solution-content text-white">
-                            <h2 class="solution-content-title font-bold">Collaborative Hiring</h2>
-                            <p class="solution-content-desc font-medium">Dễ dàng cộng tác làm việc hiệu quả trên SHIRING khi cho phép nhiều tài khoản tham gia vào quy trình tuyển dụng để đánh giá và xử lý quy trình tuyển dụng.
-                                <br>- Giảm thiểu thời gian tuyển dụng thông qua việc tạo môi trường tương tác nhanh hai chiều giữa nhân sự tuyển dụng và Hiring Manager
-                                <br>- Tối ưu hiệu quả quản lý thông qua phân quyền theo vai trò
-                                <br>- Bảo mật dữ liệu ứng viên thông qua phân quyền theo Talent Pool và vị trí tuyển dụng
-                            </p>
-                            <a href="" class="read-more font-semibold flex items-center">
-                                <p>
-                                    Xem thêm
-                                </p> 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                    <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                <div id="card-6" class="solution-item flex gap-24 mt-9 items-center">
+                                    <video class="solution-item-img" width="100%" loop="true" muted autoplay="true">
+                                        <source src="./assets/images/collab.webm" type="video/webm">
+                                    </video>
+                                    <div class="solution-content text-white">
+                                        <h2 class="solution-content-title font-bold">Collaborative Hiring</h2>
+                                        <p class="solution-content-desc font-medium">Dễ dàng cộng tác làm việc hiệu quả trên SHIRING khi cho phép nhiều tài khoản tham gia vào quy trình tuyển dụng để đánh giá và xử lý quy trình tuyển dụng.
+                                            <br>- Giảm thiểu thời gian tuyển dụng thông qua việc tạo môi trường tương tác nhanh hai chiều giữa nhân sự tuyển dụng và Hiring Manager
+                                            <br>- Tối ưu hiệu quả quản lý thông qua phân quyền theo vai trò
+                                            <br>- Bảo mật dữ liệu ứng viên thông qua phân quyền theo Talent Pool và vị trí tuyển dụng
+                                        </p>
+                                        <a href="" class="read-more font-semibold flex items-center">
+                                            <p>
+                                                Xem thêm
+                                            </p> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                                <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="card-7" class="solution-item flex gap-24 mt-9 items-center">
-                        <img src="./assets/images/solution-img.png" alt="" class="solution-item-img">
-                        <div class="solution-content text-white">
-                            <h2 class="solution-content-title font-bold">Integration</h2>
-                            <p class="solution-content-desc font-medium">Tích hợp đa dạng với các hệ thống HRM, ERP, Google, Microsoft, Test Service, ... 
-                                <br>- Kết nối với các HRM, ERP để đồng bộ hóa dữ liệu nhân sự 
-                                <br>- Đồng bộ lịch làm việc, phỏng vấn 2 chiều với Google Calendar & Outlook Calendar 
-                                <br>- Tích hợp Gmail & Outlook Mail để gửi email trao đổi với ứng viên 
-                                <br>- Gửi và xem kết quả bài test thông qua nền tảng Testcenter
-                            </p>
-                            <a href="" class="read-more font-semibold flex items-center">
-                                <p>
-                                    Xem thêm
-                                </p> 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                    <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                <div id="card-7" class="solution-item flex gap-24 mt-9 items-center">
+                                    <video class="solution-item-img" width="100%" loop="true" muted autoplay="true">
+                                        <source src="./assets/images/tichhop.webm" type="video/webm">
+                                    </video>
+                                    <div class="solution-content text-white">
+                                        <h2 class="solution-content-title font-bold">Integration</h2>
+                                        <p class="solution-content-desc font-medium">Tích hợp đa dạng với các hệ thống HRM, ERP, Google, Microsoft, Test Service, ... 
+                                            <br>- Kết nối với các HRM, ERP để đồng bộ hóa dữ liệu nhân sự 
+                                            <br>- Đồng bộ lịch làm việc, phỏng vấn 2 chiều với Google Calendar & Outlook Calendar 
+                                            <br>- Tích hợp Gmail & Outlook Mail để gửi email trao đổi với ứng viên 
+                                            <br>- Gửi và xem kết quả bài test thông qua nền tảng Testcenter
+                                        </p>
+                                        <a href="" class="read-more font-semibold flex items-center">
+                                            <p>
+                                                Xem thêm
+                                            </p> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                                <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="card-8" class="solution-item flex gap-24 mt-9 items-center">
-                        <img src="./assets/images/solution-img.png" alt="" class="solution-item-img">
-                        <div class="solution-content text-white">
-                            <h2 class="solution-content-title font-bold">Báo cáo</h2>
-                            <p class="solution-content-desc font-medium">Báo cáo thời gian thực cung cấp nhiều lát cắt tuyển dụng, giúp doanh nghiệp nhanh chóng nắm bắt tình hình tuyển dụng và đưa ra các điều chỉnh phù hợp để gia tăng hiệu quả tuyển dụng. SHIRING cung cấp đa dạng các báo cáo:
-                                <br>- Báo cáo hiệu quả tuyển dụng
-                                <br>- Báo cáo nguồn 
-                                <br>- Báo cáo chi phí tuyển dụng
-                                <br>- Báo cáo hiệu quả nhân sự tuyển dụng
-                                <br>- Báo cáo loại & từ chối offer
-                            </p>
-                            <a href="" class="read-more font-semibold flex items-center">
-                                <p>
-                                    Xem thêm
-                                </p> 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                    <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                <div id="card-8" class="solution-item flex gap-24 mt-9 items-center">
+                                    <video class="solution-item-img" width="100%" loop="true" muted autoplay="true">
+                                        <source src="./assets/images/bao cao shiring.webm" type="video/webm">
+                                    </video>
+                                    <div class="solution-content text-white">
+                                        <h2 class="solution-content-title font-bold">Báo cáo</h2>
+                                        <p class="solution-content-desc font-medium">Báo cáo thời gian thực cung cấp nhiều lát cắt tuyển dụng, giúp doanh nghiệp nhanh chóng nắm bắt tình hình tuyển dụng và đưa ra các điều chỉnh phù hợp để gia tăng hiệu quả tuyển dụng. SHIRING cung cấp đa dạng các báo cáo:
+                                            <br>- Báo cáo hiệu quả tuyển dụng
+                                            <br>- Báo cáo nguồn 
+                                            <br>- Báo cáo chi phí tuyển dụng
+                                            <br>- Báo cáo hiệu quả nhân sự tuyển dụng
+                                            <br>- Báo cáo loại & từ chối offer
+                                        </p>
+                                        <a href="" class="read-more font-semibold flex items-center">
+                                            <p>
+                                                Xem thêm
+                                            </p> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                                <path d="M14.1693 10.7591L5.83594 10.7591M14.1693 10.7591L10.8359 14.0924M14.1693 10.7591L10.8359 7.42578" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1177,7 +1344,7 @@
                     </span>
                         tuyển dụng trên SHIRING
                 </h1>
-                <div class="mt-20 flex flex-col gap-8 items-center">
+                <div class="process-contain mt-20 flex flex-col gap-8 items-center">
                     <div class="process-item justify-center flex-1 w-full flex gap-4">
                         <div class="process-item-number font-bold text-center py-1 px-6 h-fit">01</div>
                         <div class="process-item-content text-white flex p-8 gap-10">
@@ -2073,7 +2240,7 @@
         </div>
     </section>
     <section id="footer-mobile" class="hidden footer footer-mobile relative">
-        <img src="./assets/images/footer-mobile-ellipse.png" alt="" style="top: 23rem;" class="absolute right-0">
+        <img src="./assets/images/footer-mobile-ellipse.png" alt="" style="top: 27rem;" class="absolute right-0">
         <div class="section-container">
             <div class="flex flex-col gap-12 ">
                 <div class=" flex flex-col gap-8">
@@ -2094,11 +2261,8 @@
                         <ul class="list-info-item flex flex-col gap-4 text-white">
                             <li class="info-item-text font-semibold flex gap-1 items-center" onclick="toggleFirstSubMenu()">
                                 <span>TÍNH NĂNG</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                    <path d="M18 9.22754L12 15.2275L6 9.22754" stroke="#04B14E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
                             </li>
-                            <ul class="hidden footer-sub-menu flex-col gap-4" id="footerFirstSubMenu">
+                            <ul class="footer-submenu-active flex flex-col gap-4">
                                 <li>
                                     <a>
                                         Live Chat
