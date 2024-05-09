@@ -27,11 +27,11 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 80) {
-    document.querySelector(".header").style.position = "fixed";
+    document.querySelector(".header").style.position = "sticky";
     document.querySelector(".header").style.background = "#0B1F17";
     document.querySelector(".section-banner").style.marginTop = "79px";
   } else {
-    document.querySelector(".header").style.background = "inherit";
+    document.querySelector(".header").style.background = "transparent";
   }
 }
 
@@ -282,12 +282,12 @@ const cards = document.querySelectorAll(".card");
 cardsContainer.style.setProperty("--cards-count", cards.length);
 cardsContainer.style.setProperty("--card-height", `${cards[0].clientHeight}px`);
 Array.from(cards).forEach((card, index) => {
-  const offsetTop = 20 + index * 20;
+  const offsetTop = 20 + index * 12;
   card.style.paddingTop = `${offsetTop}px`;
   if (index === cards.length - 1) {
     return;
   }
-  const toScale = 1 - (cards.length - 1 - index) * 0.03;
+  const toScale = 1 - (cards.length - 1 - index) * 0.05;
   const nextCard = cards[index + 1];
   const cardInner = card.querySelector(".card__inner");
   ScrollObserver.Element(nextCard, {
@@ -301,8 +301,13 @@ Array.from(cards).forEach((card, index) => {
       });
     cardInner.style.filter = `blur(${valueAtPercentage({
         from: 0,
-        to: 5,
+        to: 3,
         percentage: percentageY,
       })}px)`;
+    console.log(valueAtPercentage({
+      from: 1,
+      to: 0,
+      percentage: percentageY,
+    }));
   });
 });

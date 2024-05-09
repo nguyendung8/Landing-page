@@ -86,6 +86,7 @@ body {
     background: #1A1F21;
     position: sticky;
     top: 300px;
+    border: 1px solid #455055;
 }
 .solution-item .read-more {
     margin-top: 10px;
@@ -959,11 +960,6 @@ body {
     border-bottom-right-radius: 8px;
 }
 @media only screen and (max-width: 1156px) {
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
     .header {
         padding: unset;
         position: unset !important;
