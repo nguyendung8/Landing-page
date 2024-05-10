@@ -956,6 +956,12 @@ body {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+.header-lang-mobile {
+    display: none;
+}
+.header-action {
+    display: none;
+}
 @media only screen and (max-width: 1156px) {
     .header {
         padding: unset;
@@ -968,6 +974,12 @@ body {
     }
     .menu-btn {
         display: block;
+    }
+    .header-lang-mobile {
+        display: flex;
+    }
+    .header-action {
+        display: flex;
     }
     .section-banner{
         margin-top: unset !important;
@@ -1407,23 +1419,5 @@ body {
     }
     .footer-title {
         font-size: 42px !important;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1155px) {
-    .header {
-        padding: unset;
-        position: unset !important;
-        background: unset !important;
-    }
-    .header-menu-list,
-    .navbar .header-btn  {
-        display: none !important;
-    }
-    .menu-btn {
-        display: block;
-    }
-    .section-banner{
-        margin-top: unset !important;
-        background-position: center;
     }
 }
