@@ -226,7 +226,7 @@ body {
 .banner-img {
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
-    transform: translateY(4rem);
+    transform: translateY(8rem);
     border: 26px solid #004E21;
 }
 .list-target {
@@ -310,9 +310,6 @@ body {
     font-weight: 600;
     line-height: normal;
     transform-origin: 50% 100%;
-}
-.section-solution {
-    padding-top: 0 !important;
 }
 .system-first-title span,
 .section-second-title span {
@@ -1028,6 +1025,9 @@ body {
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
     }
+    .section-solution {
+        padding-top: 0 !important;
+    }
     .section-enterprise-title {
         font-size: 30px !important;
         padding: 0 16px;
@@ -1407,5 +1407,23 @@ body {
     }
     .footer-title {
         font-size: 42px !important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1155px) {
+    .header {
+        padding: unset;
+        position: unset !important;
+        background: unset !important;
+    }
+    .header-menu-list,
+    .navbar .header-btn  {
+        display: none !important;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .section-banner{
+        margin-top: unset !important;
+        background-position: center;
     }
 }

@@ -29,7 +29,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 80) {
     document.querySelector(".header").style.position = "sticky";
     document.querySelector(".header").style.background = "#0B1F17";
-    document.querySelector(".section-banner").style.marginTop = "79px";
+    // document.querySelector(".section-banner").style.marginTop = "79px";
   } else {
     document.querySelector(".header").style.background = "transparent";
   }
