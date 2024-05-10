@@ -180,7 +180,7 @@ body {
     scroll-snap-align: start;
     height: 100vh;
 }
-.section-header-top {
+.main-content {
     background: url('./assets/images/banner-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -1406,9 +1406,9 @@ body {
         font-weight: 500;
         line-height: 21.75px;
     }
-    .section-header-top {
+    .main-content {
         background-position: bottom;
-        background-size: cover !important;
+        background-size: cover !;
     }
     .banner-content-btn {
         flex-direction: column;
